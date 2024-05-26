@@ -1,6 +1,9 @@
 import streamlit as st
 from langchain.llms import OpenAI
 
+# Some of you may face the error of ModuleNotFoundError: No module named 'langchain_community'.
+# So do install longchain community in your enviornment before using this code.
+
 # Function to generate LLM response
 def generate_response(input_text, openai_api_key):
     if not openai_api_key:
